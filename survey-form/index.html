@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+<div class="Container">
+    <header class="Header">
+        <h1 id="title" class="Header1">Website Survey</h1>
+        <p id="description" class="Description1">Please fill in the required information for the site.</p>
+    </header>
+</head>
+<body>  
+    <form id="Website-Survey">
+        <div class="Form-Group">
+            <label id="name-Label" for="name">Name</label>
+            <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-Control"
+            placeholder="Enter your name"
+            required
+            />
+        </div>
+        <div class="Form-Group">
+            <label id="email-Label" for="email">Email</label>
+            <input
+            type="text"
+            name="email"
+            id="email"
+            class="form-Control"
+            placeholder="Enter your email"
+            required
+            />
+        </div>
+        <div class="Form-Group">
+            <p>How did you hear about this site?</p>
+            <label>
+                <input
+                name="how-found"
+                value="social-media"
+                type="radio"
+                class="input-radio"
+                checked
+                />
+            Social Media</label>
+            <label>
+                <input
+                name="how-found"
+                value="advertisement"
+                type="radio"
+                class="input-radio"
+                checked
+                />
+            Advertisement</label>
+            <label>
+                <input
+                name="how-found"
+                value="search-engine"
+                type="radio"
+                class="input-radio"
+                checked
+                />
+            Search Engine</label>
+        
+        <p>Which browser are you using?</p>
+            <label>
+                <input
+                name="which-browser"
+                value="Google Chrome"
+                type="radio"
+                class="input-radio"
+                checked
+                />
+            Google Chrome</label>
+            <label>
+                <input
+                name="which-browser"
+                value="Firefox"
+                type="radio"
+                class="input-radio"
+                checked
+                />
+            Firefox</label>
+            <label>
+                <input
+                name="which-browser"
+                value="IE"
+                type="radio"
+                class="input-radio"
+                checked
+                />
+            Internet Explorer</label>
+            <label>
+                <input
+                name="which-browser"
+                value="Safari"
+                type="radio"
+                class="input-radio"
+                checked
+                />
+            Safari</label>
+            <label>
+                <input
+                name="which-browser"
+                value="Opera"
+                type="radio"
+                class="input-radio"
+                checked
+                />
+            Opera</label>
+        </div>
+        <div class="Form-Group">
+            <p>What device did you use to access this site?</p>
+            <label>
+                <input
+                name="device"
+                value="Computer/Laptop"
+                type="radio"
+                class="input-radio"
+                checked
+                />
+            Computer/Laptop</label>
+            <label>
+                <input
+                name="device"
+                value="Tablet"
+                type="radio"
+                class="input-radio"
+                checked
+                />
+            Tablet</label>
+            <label>
+                <input
+                name="device"
+                value="Mobile Devices"
+                type="radio"
+                class="input-radio"
+                checked
+                />
+            Mobile Devices</label>
+        </div>
+        <div class="Form-Group">
+            <p>Are you glad you discovered the site?</p>
+            <select id="happy?" name="happy?" class="Form-Control" required>
+                <option disabled selected value="Select an option"></option>
+                <option value="I am satisfied.">I am satisfied.</option>
+                <option value="I'm neutral.">I'm neutral.</option>
+                <option value="I am not satisfied.">I am not satisfied.</option>
+            </select>
+        </div>
+        <div class="Form-Group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+        </div>
+        <div class="Form-Group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+        </div>
+    </form>
+</div>
+</body>
+</html>  
