@@ -8,6 +8,3 @@
 * Product Landing Page: [Page]()
 * Technical Documentation Page: [Page]()
 * Personal Portfolio: [Page]()
-
-
-## Certification
