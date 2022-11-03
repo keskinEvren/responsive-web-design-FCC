@@ -1,167 +1,164 @@
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-<div class="Container">
-    <header class="Header">
-        <h1 id="title" class="Header1">Website Survey</h1>
-        <p id="description" class="Description1">Please fill in the required information for the site.</p>
-    </header>
-</head>
-<body>  
-    <form id="Website-Survey">
-        <div class="Form-Group">
-            <label id="name-Label" for="name">Name</label>
-            <input
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Website Survey</h1>
+        <p id="description" class="description text-center">
+          Please fill in the required information for the site.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
             type="text"
             name="name"
             id="name"
-            class="form-Control"
+            class="form-control"
             placeholder="Enter your name"
             required
-            />
+          />
         </div>
-        <div class="Form-Group">
-            <label id="email-Label" for="email">Email</label>
-            <input
-            type="text"
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
             name="email"
             id="email"
-            class="form-Control"
-            placeholder="Enter your email"
+            class="form-control"
+            placeholder="Enter your Email"
             required
-            />
+          />
         </div>
-        <div class="Form-Group">
-            <p>How did you hear about this site?</p>
-            <label>
-                <input
-                name="how-found"
-                value="social-media"
-                type="radio"
-                class="input-radio"
-                checked
-                />
-            Social Media</label>
-            <label>
-                <input
-                name="how-found"
-                value="advertisement"
-                type="radio"
-                class="input-radio"
-                checked
-                />
-            Advertisement</label>
-            <label>
-                <input
-                name="how-found"
-                value="search-engine"
-                type="radio"
-                class="input-radio"
-                checked
-                />
-            Search Engine</label>
-        
-        <p>Which browser are you using?</p>
-            <label>
-                <input
-                name="which-browser"
-                value="Google Chrome"
-                type="radio"
-                class="input-radio"
-                checked
-                />
-            Google Chrome</label>
-            <label>
-                <input
-                name="which-browser"
-                value="Firefox"
-                type="radio"
-                class="input-radio"
-                checked
-                />
-            Firefox</label>
-            <label>
-                <input
-                name="which-browser"
-                value="IE"
-                type="radio"
-                class="input-radio"
-                checked
-                />
-            Internet Explorer</label>
-            <label>
-                <input
-                name="which-browser"
-                value="Safari"
-                type="radio"
-                class="input-radio"
-                checked
-                />
-            Safari</label>
-            <label>
-                <input
-                name="which-browser"
-                value="Opera"
-                type="radio"
-                class="input-radio"
-                checked
-                />
-            Opera</label>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
         </div>
-        <div class="Form-Group">
-            <p>What device did you use to access this site?</p>
-            <label>
-                <input
-                name="device"
-                value="Computer/Laptop"
-                type="radio"
-                class="input-radio"
-                checked
-                />
-            Computer/Laptop</label>
-            <label>
-                <input
-                name="device"
-                value="Tablet"
-                type="radio"
-                class="input-radio"
-                checked
-                />
-            Tablet</label>
-            <label>
-                <input
-                name="device"
-                value="Mobile Devices"
-                type="radio"
-                class="input-radio"
-                checked
-                />
-            Mobile Devices</label>
+
+        <div class="form-group">
+          <p>How did you hear about this site?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="SocialMedia">Social Media</option>
+            <option value="Advertisement">Advertisement</option>
+            <option value="SearchEngine">Search Engine</option>
+            <option value="other">Other</option>
+          </select>
         </div>
-        <div class="Form-Group">
-            <p>Are you glad you discovered the site?</p>
-            <select id="happy?" name="happy?" class="Form-Control" required>
-                <option disabled selected value="Select an option"></option>
-                <option value="I am satisfied.">I am satisfied.</option>
-                <option value="I'm neutral.">I'm neutral.</option>
-                <option value="I am not satisfied.">I am not satisfied.</option>
-            </select>
+
+        <div class="form-group">
+          <p>Which browser are you using?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="GoogleChrome"
+              type="radio"
+              class="input-radio"
+              checked
+            />Google Chrome</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="Firefox"
+              type="radio"
+              class="input-radio"
+            />Firefox</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="Safari"
+              type="radio"
+              class="input-radio"
+            />Safari</label
+          >
         </div>
-        <div class="Form-Group">
-            <p>Any comments or suggestions?</p>
-            <textarea
-              id="comments"
-              class="input-textarea"
-              name="comment"
-              placeholder="Enter your comment here..."
-            ></textarea>
+
+        <div class="form-group">
+          <p>What device did you use to access this site?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="Computer/Laptop">Computer/Laptop</option>
+            <option value="Tablet">Tablet</option>
+            <option value="MobileDevices">Mobile Devices</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
-        <div class="Form-Group">
-            <button type="submit" id="submit" class="submit-button">
-              Submit
-            </button>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(You can check all you want.)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="Availability"
+              type="checkbox"
+              class="input-checkbox"
+            />Availability
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="Visibility "
+              type="checkbox"
+              class="input-checkbox"
+            />Visibility
+          </label>
+          <label
+            ><input
+              name="prefer"
+              value="Cost"
+              type="checkbox"
+              class="input-checkbox"
+            />Cost</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Quality"
+              type="checkbox"
+              class="input-checkbox"
+            />Quality</label
+          >
         </div>
-    </form>
-</div>
-</body>
-</html>  
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
