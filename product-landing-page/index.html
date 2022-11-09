@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -48,65 +48,69 @@
             lover is sure to be satisfied!
         </p>
     </div>
-        <div class="video-container">
-        <iframe width="750" height="400" src="https://www.youtube.com/embed/fU7gUSuhIPA" title="YouTube video player"
-            frameborder="0"
+    <div class="video-container" id="video-container">
+        <iframe id="video" width="750" height="400" src="https://www.youtube.com/embed/fU7gUSuhIPA"
+            title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
     </div>
 
     <main id="main">
-        <section class="flex-container" id="tea-names">
-            <div class="offer">
-            
-            <div id="wrapper">
+        <div id="product">
+            <section class="flex-container" id="tea-names">
                 <div class="offer">
-                    <div class="box-title">Black Tea</div>
-                <img id="first-img" src="https://i.pinimg.com/564x/25/51/65/2551655a9901561290560186915f1ad1.jpg"
+
+                    <div id="wrapper">
+                        <div class="offer">
+                            <div class="box-title">Black Tea</div>
+                            <img id="first-img" src="https://i.pinimg.com/564x/25/51/65/2551655a9901561290560186915f1ad1.jpg"
                     alt="Black Tea" width="275" height="450" />
-                <ul  class="bullet-points">
-                    <li>$5.99 (500gm)</li>
-                    <br />
-                </ul>
-                <button class="btn">Add Card</button>
-            </div>
-                <br />
-                <div class="offer">
-                <div class="box-title">Green Tea</div>
-                <img id="second-img" src="https://i.pinimg.com/564x/44/a9/2a/44a92afa2bed4f5213c0be3589c2a8da.jpg"
+                            <ul class="bullet-points">
+                                <li>$5.99 (500gm)</li>
+                                <br />
+                            </ul>
+                            <button class="btn">Add Card</button>
+                        </div>
+                        <br />
+                        <div class="offer">
+                            <div class="box-title">Green Tea</div>
+                            <img id="second-img" src="https://i.pinimg.com/564x/44/a9/2a/44a92afa2bed4f5213c0be3589c2a8da.jpg"
                     alt="Green Tea" width="275" height="450" />
-                <ul  class="bullet-points">
-                    <li>$7.99 (500gm)</li>
-                    <br />
-                </ul>
-                <button class="btn">Add Card</button>
-                <br />
-            </div>
-            <div class="offer">
-                <div class="box-title">White Tea</div>
-                <img id="third-img" src="https://i.pinimg.com/564x/be/f7/8f/bef78f3eed9e01c62c0cf647f4da506e.jpg"
+                            <ul class="bullet-points">
+                                <li>$7.99 (500gm)</li>
+                                <br />
+                            </ul>
+                            <button class="btn">Add Card</button>
+                            <br />
+                        </div>
+                        <div class="offer">
+                            <div class="box-title">White Tea</div>
+                            <img id="third-img" src="https://i.pinimg.com/564x/be/f7/8f/bef78f3eed9e01c62c0cf647f4da506e.jpg"
                     alt="White Tea" width="275" height="450" />
-                <ul  class="bullet-points">
-                    <li>$9.99 (500gm)</li>
-                    <br />
-                </ul>
-                <button class="btn">Add Card</button>
-            </div>
-            <br />
-        </section>
+                            <ul class="bullet-points">
+                                <li>$9.99 (500gm)</li>
+                                <br />
+                            </ul>
+                            <button class="btn">Add Card</button>
+                        </div>
+                        <br />
+            </section>
+        </div>
     </main>
 
     <section id="email-submit">
-        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
-            <div id="contact-title">Contact Me</div>
-            <div class="form-group" id="contact"><input type="email" id="email" name="email" class="form-control-input"
+        <div id="contact">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                <div id="contact-title">Contact Me</div>
+                <div class="form-group" id="contact"><input type="email" id="email" name="email" class="form-control-input"
                     placeholder="Enter your email" required></div>
-            <div class="form-group"><input type="text" class="form-control-input" placeholder="Enter your name"
+                <div class="form-group"><input type="text" class="form-control-input" placeholder="Enter your name"
                     id="name" required></div>
-            <div class="form-group"><textarea placeholder="Enter your message here" id="message"></textarea></div>
-            <div class="form-group"><input class="gradient-btn" type="submit" value="Send" id="submit"></div>
-        </form>
+                <div class="form-group"><textarea placeholder="Enter your message here" id="message"></textarea></div>
+                <div class="form-group"><input class="gradient-btn" type="submit" value="Send" id="submit"></div>
+            </form>
+        </div>
     </section>
 
     <footer>
